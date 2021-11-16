@@ -23,6 +23,7 @@ The data will be disign like this :
 - Crete tables depending on the queries and set the primary keys based on the queries
 
 # To run this project :
-
+- Run the Notebook : [Project_1B_ Project_Template.ipynb](https://github.com/Iaddiop/Data-Modeling-with-Apache-Cassandra/blob/master/Project_1B_%20Project_Template.ipynb)
+- The [event_datafile_new.csv](https://github.com/Iaddiop/Data-Modeling-with-Apache-Cassandra/blob/master/event_datafile_new.csv) file will be stored all events after the part 1 data pre_processing
 # References :
 - Apache cassandra : https://cassandra.apache.org/_/index.html
