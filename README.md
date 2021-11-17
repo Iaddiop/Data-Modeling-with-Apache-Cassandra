@@ -4,26 +4,27 @@ The CSV files are stored on a directory as event files.
 The database will be used later on analytical dashboards (marketing, financial ...) to understand user behavior and usage habits.
 
 Different steps will be taken to modeling the NoSQL database on Apache Cassandra :
-- Part 1 : data Pre-Processing
+- Part 1 : ETL pipepline to Pre-Processing data
     - Navigate in the path to retrive the data
-    - Create a csv that will be use to insert data in Cassandra database ans tables
-- Part 2 : build ETL to 
+    - ETL to create a csv that will be use to insert data in Cassandra database ans tables
+- Part 2 : data modeling with Cassandra 
     - Create tables (each table will be response to an especific select query of ower data)
     - Insert rows in the tables
-- Testing the return of the select statements
+    - Testing the return of the select statements 
 
 # About the data :
-The data stored in :
-[event_data]()
 
 # Data modeling :
 The data will be disign like this :
-- All tables will be creted base on query that we want to execute
-- Then we writ the keyspace and set it
-- Crete tables depending on the queries and set the primary keys based on the queries
+- Specify the keyspace and set it
+- Create All tables based on the query that we want to execute or the informations that we want to retrieve
+- Create for each table a composite key
 
-# To run this project :
-- Run the Notebook : [Project_1B_ Project_Template.ipynb](https://github.com/Iaddiop/Data-Modeling-with-Apache-Cassandra/blob/master/Project_1B_%20Project_Template.ipynb)
-- The [event_datafile_new.csv](https://github.com/Iaddiop/Data-Modeling-with-Apache-Cassandra/blob/master/event_datafile_new.csv) file will be stored all events after the part 1 data pre_processing
+# Composition of the project :
+- The data stored in : [event_data](https://github.com/Iaddiop/Data-Modeling-with-Apache-Cassandra/blob/master/data_download.zip)
+- The Notebook : [Project_1B_ Project_Template.ipynb](https://github.com/Iaddiop/Data-Modeling-with-Apache-Cassandra/blob/master/Project_1B_%20Project_Template.ipynb)
+- The file [event_datafile_new.csv](https://github.com/Iaddiop/Data-Modeling-with-Apache-Cassandra/blob/master/event_datafile_new.csv) will be store all events after the part 1 : data pre_processing
 # References :
-- Apache cassandra : https://cassandra.apache.org/_/index.html
+- [Apache cassandra](https://cassandra.apache.org/_/index.html)
+- [Designing a Cassandra Data Model](https://shermandigital.com/blog/designing-a-cassandra-data-model/)
+- [StackOverflow thread to understand difference between partition key, composite key, and clustering column](https://stackoverflow.com/questions/24949676/difference-between-partition-key-composite-key-and-clustering-key-in-cassandra/24953331#24953331)
